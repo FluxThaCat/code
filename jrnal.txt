@@ -1,0 +1,63 @@
+Day 1 : 
+
+		Chapter 1 :
+
+		-Use cntrl shift P for command window.
+		-![tab] to create default .html template.
+		-Use keyboard shortcuts to save time.
+		-statements/expressions
+		-code is case-sensitive, this is a big cause of bugs
+		-white space is ignored.
+		
+		1. Helloworld Jscript Cmd
+			let normalName = 'Quinn';
+			let javaScriptName = normalName + 'Script';
+			console.log('Your Javascript Name is ' + JavaScriptName);
+			!WARNING USE ENTER AFTER EACH LINE OF CODE. UNDEFINED IS ACCEPTABLE IN CONSOLE MODE.
+			
+		-Use cntrl shift J in browser to open up the console on chrome.
+		
+		2. Button Browserprompt .html cmd;
+			<button onclick="alert('Welcome to Javascript All-In-One, Hello World')">
+			Click here for an important message
+			</button>
+			
+		- (2.) is uncommon, it's a limited command and it's not considered an attractive option in executing a javascript command.
+		- (2.) runs with a higher scope (unsure what this means as of yet), this can break with more complex jscript operations.
+		
+		3. Running Javascript commands (html inline method in <body> )
+			<script>
+			let personName = prompt('What is your name, user?');
+			alert('Hello, ' + personName);
+			</script>
+			
+		- Seperation of concerns informs that programs shall be seperated into different sections. You shouldn't mix your presentation code (HTML) with logic code (JavaScript).
+		- (3.) is an unrealistic example because as previously implied, this is not a viable way of executing complex code and it's convoluted.
+		- the index.html file notates the folder containing it as the root directory.
+		
+		4. First Javascript .js file, gamelet.js
+				const ball = document.getElementById('ball')
+			document.addEventListener('keydown', handleKeyPress);
+			let position = 0;
+
+			function handleKeyPress(e) {
+				if (e.code === 'ArrowLeft') {
+					position = position - 10;
+				}
+				if (e.code === 'ArrowRight') {
+				position = position + 10;
+				}
+				if (position < 0) {
+				position = 0;
+				}
+			refresh();
+			}
+			function refresh() {
+				ball.style.left = position + 'px';
+			}
+			
+		Chapter 2 :
+		
+		"As a cook, your station, and its condition, its state of readiness, is an extension of your nervous system."
+		- Use // to note lines of code.
+		- Use /* */ to block off lines of code.
